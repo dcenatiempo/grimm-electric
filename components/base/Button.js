@@ -8,13 +8,13 @@ function createStyles({ color }) {
         top: 5,
         right: 0,
         bottom: 0,
-        left: '1rem'
+        left: '1rem',
       },
     },
-  }
-};
+  };
+}
 
 export default function Button({ color, label, onClick }) {
   const styles = useMemo(() => createStyles({ color }), [color]);
-  return <button style={styles.myButton}>{label}</button>
+  return <button style={styles.myButton}>{label}</button>;
 }
