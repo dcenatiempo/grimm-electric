@@ -27,6 +27,7 @@ export default function Home() {
           content="electrician, electric, Tooele, Salt Lake, Utah"
         />
         <link rel="icon" href="/favicon.ico" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
       </Head>
 
       <div style={styles.imageWrapper}>

@@ -1,6 +1,7 @@
 const styles = {
   container: {
     display: 'flex',
+    flexFlow: 'row wrap',
     justifyContent: 'space-between',
     alignItems: 'center',
     padding: '1rem',
@@ -9,13 +10,15 @@ const styles = {
     margin: 0,
     lineHeight: 1.15,
     fontSize: '2rem',
+    margin: 'auto',
   },
   phoneWrapper: {
     display: 'flex',
+    margin: 'auto',
   },
-  phoneIcon: { height: '1.8rem', width: '1.8rem', marginRight: '1rem' },
+  phoneIcon: { height: '1.4rem', width: '1.4rem', margin: '0 1rem' },
   phoneNumber: {
-    fontSize: '2rem',
+    fontSize: '1.4rem',
   },
 };
 
