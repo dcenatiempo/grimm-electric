@@ -1,9 +1,17 @@
 import Head from 'next/head';
-import styles from 'styles/Home.module.css';
+// import styles from 'styles/Home.module.css';
 import MainLayout from 'components/layouts/MainLayout';
 import Button from 'components/base/Button';
 import Image from 'next/image';
 import reaperLogo from '../public/grimm-electric-reaper.jpg';
+
+const styles = {
+  imageWrapper: {
+    paddingTop: '10vh',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+};
 
 export default function Home() {
   return (
@@ -21,7 +29,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div style={{ paddingTop: '10vh' }}>
+      <div style={styles.imageWrapper}>
         <Image src={reaperLogo} alt="Grimm Electric Logo" />
       </div>
       {/* <Button color="blue" label="nothing will happen if you press me" /> */}
