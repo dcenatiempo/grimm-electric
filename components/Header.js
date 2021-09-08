@@ -25,7 +25,7 @@ const styles = {
 export default function Header() {
   return (
     <header style={styles.container}>
-      <h1 style={styles.title}>Tooele Electrictian</h1>
+      <h1 style={styles.title}>Tooele Electrician</h1>
 
       <span style={styles.phoneWrapper}>
         <svg
