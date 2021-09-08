@@ -2,14 +2,10 @@ import 'styles/globals.css';
 import 'styles/reset.css';
 
 function MyApp({ Component, pageProps }) {
-  // https://adamwathan.me/2019/10/17/persistent-layout-patterns-in-nextjs/
-  const Layout = Component.layout || ((children) => <>{children}</>);
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout || ((page) => page);
 
-  return (
-    <Layout>
-      <Component {...pageProps}></Component>
-    </Layout>
-  );
+  return getLayout(<Component {...pageProps} />);
 }
 
 export default MyApp;

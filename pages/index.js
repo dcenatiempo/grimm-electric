@@ -20,4 +20,6 @@ export default function Home() {
   );
 }
 
-Home.layout = MainLayout;
+Home.getLayout = function getLayout(page) {
+  return <MainLayout>{page}</MainLayout>;
+};
